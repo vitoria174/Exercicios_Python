@@ -1,0 +1,14 @@
+# funçao que retorno se numero é primo
+
+def numprimo(np):
+    tot=0
+    for c in range(1,np,1):
+        if np % c == 0:
+            tot+=1
+    if tot > 2:
+        print(f'numero {np} não é primo')
+    else:
+        print(f'numero {np} é primo')
+
+n=int(input('Digite um numero:'))
+numprimo(n)
