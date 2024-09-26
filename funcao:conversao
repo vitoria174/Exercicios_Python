@@ -1,0 +1,32 @@
+#conversao de temperatura usando funçao
+
+def temperatura(graus,conversao,tempo):
+    if graus == 'F':
+        if conversao == 'C':
+            fahrcelsius=(tempo-32)/1.8
+            print(f'{fahrcelsius}°C')
+        elif conversao == 'K':
+            farkel=(tempo-32)*0.55+273
+            print(f'{farkel}K')
+    elif graus == "C":
+        if conversao == "F":
+         celsiusfah=tempo*1.8+32
+         print(celsiusfah)
+        if conversao =='K':
+         celsiskel=tempo+273
+         print(f'{celsiskel}K')
+    elif graus == 'K':
+        if conversao == 'F':
+         kelfar=((tempo-273)*1.8)+32
+         print(kelfar)
+        if conversao == 'C':
+         kelcel=tempo-273
+         print(kelcel)
+    else:
+        print('Temperatura não cadastrada.')
+
+print('F-Fahrenheit\nC- Celsis\nK- kelvin')
+esc=str(input('Qual temperatura gostaria de fazer a conversão:')).upper()[0]
+tem=float(input('Digite a temperatura:'))
+tempco=str(input('Para qual temperatura:')).upper()[0]
+temperatura(esc,tempco,tem)
