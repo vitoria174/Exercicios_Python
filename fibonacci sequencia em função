@@ -1,0 +1,16 @@
+def finoba(num):
+    cont=3
+    t1=0
+    t2=1
+    print(t1,end=" ")
+    print(t2,end=" ")
+    while cont <= num:
+        t3=t1+t2
+        print(t3,end=" ")
+        cont+=1
+        t1=t2
+        t2=t3
+
+
+n_termos=int(input('quantos termos:'))   
+finoba(n_termos)
